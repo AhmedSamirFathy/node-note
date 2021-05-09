@@ -29,8 +29,9 @@
                     <input value="<%= oldInputs?oldInputs.password:'' %>" placeholder="Enter you password" type="password" name="password" class="form-control" />
                     <% if (error.find(e=>e.param=='password')) { %>
                         <div class="alert alert-danger">
-                            Invalid Input <br> Password must at least contain 
+                            Invalid Input <br>  
                             <ul class="text-left">
+                                <p>Password must at least contain</p>
                                 <li>A lowercase letter</li>
                                 <li>An uppercase letter</li>
                                 <li>A special character</li>

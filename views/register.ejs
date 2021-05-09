@@ -28,8 +28,7 @@
                 <div class="form-group">
                     <input value="<%= oldInputs?oldInputs.password:'' %>" placeholder="Enter you password" type="password" name="password" class="form-control" />
                     <% if (error.find(e=>e.param=='password')) { %>
-                        <div class="alert alert-danger">
-                            Invalid Input <br>  
+                        <div class="alert alert-danger"> 
                             <ul class="text-left">
                                 <p>Password must at least contain</p>
                                 <li>A lowercase letter</li>
@@ -44,7 +43,7 @@
                     <input value="<%= oldInputs?oldInputs.confirmPassword:'' %>" placeholder="confirm Password" type="password" name="confirmPassword" class="form-control" />
                     <% if (error.find(e=>e.param=='confirmPassword')) { %>
                         <div class="alert alert-danger">
-                            Invalid Input
+                            Password doesn't match
                         </div>
                         <% } %>
                 </div>

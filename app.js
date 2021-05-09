@@ -27,6 +27,9 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0.82h0q.mongodb.net/NotesApp'
 app.use(require('./routes/register.routes'))
 app.use(require('./routes/login.routes'))
 app.use(require('./routes/home.routes'))
+app.get('*', (req, res) => {
+  res.send('404 Page not found')
+})
 
 
 
